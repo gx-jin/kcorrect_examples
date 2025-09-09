@@ -10,6 +10,7 @@ pip install kcorrect
 
 ## `kcorrect` warnings
 - `kcorrect 5.1.8` may exhibit memory leaks when processing large numbers (~100) of galaxies in a single script (e.g., within a loop). Then the program may be killed without error. Need a script for fitting one galaxy and a main script to run these subprocesses in loops.
+- `kcorrect 5.1.8` may only work with `numpy` version before 1.23
 
 ## AGN templates
 The templates from [Pai et al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...977..102P/abstract), 
