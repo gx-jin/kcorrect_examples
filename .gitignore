@@ -1,3 +1,4 @@
 # Ignore data directory
 /data/
 /__pycache__/
+/.vscode/
