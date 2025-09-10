@@ -23,7 +23,7 @@ def get_sed(kc, coeffs_obj,
 
 def get_smass(kc, coeffs_obj, z, corr_ld):
     derived = kc.derived(redshift=z, coeffs=coeffs_obj)
-    smass = np.log10(derived['mremain'])-9.0 + 2*np.log10(corr_ld)
+    smass = np.log10(derived['mremain']) + 2*np.log10(corr_ld)
     b50 = derived['b50']
     b300 = derived['b300']
     b1000 = derived['b1000']
@@ -61,7 +61,7 @@ if __name__ == '__main__':
             "b300": b300,
             "b1000": b1000,
             "metallicity": metallicity,
-            "nanomaggies": maggies,
+            "maggies": maggies,
             "ivars": ivar,
             "z": z
         }
